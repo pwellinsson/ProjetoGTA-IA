@@ -28,11 +28,29 @@
     </main>
 
     <footer>
-      <img onclick="mudarImagem('Lucia', '#ff0995', 'img/lucia.png')" src="img/lucia.png" alt="Imagem Lucia" />
-      <img onclick="mudarImagem('Jason', '#2db8e6', 'img/jason.png')" src="img/jason.png" alt="Imagem Jason" />
-      <img onclick="mudarImagem('CJ', '#009a00', 'img/cj.png')" src="img/cj.png" alt="Imagem CJ" />
-      <button id="voce">📷</button>
+      <img
+        onclick="mudarImagem('Lucia', '#ff0995', 'img/lucia.png')"
+        src="img/lucia.png"
+        alt="Imagem Lucia"
+      />
+      <img
+        onclick="mudarImagem('Jason', '#2db8e6', 'img/jason.png')"
+        src="img/jason.png"
+        alt="Imagem Jason"
+      />
+      <img
+        onclick="mudarImagem('CJ', '#009a00', 'img/cj.png')"
+        src="img/cj.png"
+        alt="Imagem CJ"
+      />
+
+      <label id="voce"
+        >📷
+        <input type="file" accept="image/*" hidden onchange="lerFoto(this)" />
+      </label>
     </footer>
+
+    <script src="https://js.puter.com/v2/"></script>
 
     <script src="script.js"></script>
   </body>
